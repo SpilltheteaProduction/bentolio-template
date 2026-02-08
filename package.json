@@ -1,12 +1,14 @@
 {
-  "name": "bentolio",
+  "name": "bentolio-template",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://spilltheteaproduction.github.io/bentolio-template",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "gh-pages -d out --dotfiles"
   },
   "dependencies": {
     "@gsap/react": "^2.1.1",

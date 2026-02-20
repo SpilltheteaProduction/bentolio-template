@@ -1,83 +1,54 @@
 {
   "nav": {
-    "logo": "Bentolio",
-    "links": [
-      {
-        "title": "Buy Next.js template",
-        "url": "https://rauftech.lemonsqueezy.com/buy/43d4f6ca-c525-497f-a77a-8148150335dc"
-      }
+    "logo": "Spill the tea Production"
+  },
+  "video": {
+    "link": "https://spilltheteaproduction.github.io/bentolio-template/showreel.mp4"
+  },
+  "intro": {
+    "heading": "Chaque histoire mérite d'être racontée avec soin.",
+    "description": "Votre projet, c’est votre histoire. Elle a besoin d’être structurée, incarnée, réalisée avec exigence. Nous vous accompagnons pour trouver sa forme juste, à la hauteur de vos objectifs et de votre cible.\n\nNotre équipe est spécialisée en fiction : Quand vous nous confiez un projet, nous le pensons en termes d’intentions, de rythme, d’émotion. Et nous faisons toujours en sorte qu’il porte votre regard singulier.",
+    "bullets": [
+      "Création originale",
+      "Brand content",
+      "Films promotionnels",
+      "Captation de spectacles"
     ]
   },
 
-  "intro": {
-    "heading": "Let’s create dance floor <span class='italic'> magic</span> for your special day",
-    "icon": "/icons/intro-icon.svg"
-  },
-   
   "portrait": {
-    "image": "/portrait.png"
-  },
-
-  "about": {
-    "text": "DJ Lisa is a passionate wedding DJ, acclaimed for blending diverse musical genres with expert crowd-reading skills. Based in Florida, she crafts personalized soundtracks that turn every wedding into an unforgettable celebration.",
-    "icon": "/icons/about-icon.svg"
+    "image": "https://spilltheteaproduction.github.io/bentolio-template/portrait.png"
   },
 
   "contact": {
-    "label": "Have some questions?",
-    "heading": "Contact <span class='italic'>me</span>",
-    "linkIcon": "/icons/arrow-icon.svg",
-    "email": "hello@rauftech.com"
+    "label": "Des questions?",
+    "heading": "Écrivons-nous !",
+    "icon": "/icons/arrow-icon.svg",
+    "email": "contact@spillthetea.fr"
   },
 
   "work": {
     "projects": [
       {
-        "title": "First Dance",
-        "url": "",
-        "media": "/work.png"
+        "title": "Titouan Laporte 🎥",
+        "description": "Réalisateur depuis 10 ans, Titouan a développé une polyvalence qui se reflète dans la diversité de ses projets. Comédien depuis son plus jeune âge, il maîtrise la direction d’acteur et la justesse du jeu.\n\nSes films ont remporté des prix à l’international et son court métrage Le Magasin des Compliments est diffusé sur TF1/TF1 Séries Films."
       },
       {
-        "title": "Cocktail Hour",
-        "url": "",
-        "media": "/work.png"
-
+        "title": "Mathilde Guzzo ✒️",
+        "description": "Diplômée en Lettres Modernes, formée au Conservatoire Européen d’Ecriture Audiovisuelle et à la Cité des scénaristes, Mathilde vous accompagne dans vos projets en créant des récits structurés et adaptés à une audience.\n\nSes projets ont été lauréats des bourses d’écriture du Ministère de la Culture et Beaumarchais-SACD."
       },
       {
-        "title": "Dinner Music",
-        "url": "",
-        "media": "/work.png"
-
-      },
-      {
-        "title": "After Party",
-        "url": "",
-        "media": "/work.png"
-
-      },
-      {
-        "title": "Last Dance",
-        "url": "",
-        "media": "/work.png"
+        "title": "Elise Cunniet-Robert 💻​",
+        "description": "Développeuse informatique issue de l’École 42, Elise s’occupe des aspects technologiques de nos projets, en particulier pour les expériences immersives et interactives.\n\nLauréate du hackathon Google pour le Climat (2022), son expertise en programmation permet à Spill the tea de vous proposer les dernières innovations."
       }
-    ],
-    "linkIcon": "/icons/arrow-icon-black.svg"  
+    ]
   },
 
- 
   "socials": {
     "links": [
       {
-        "title": "Figma",
-        "url": "https://www.figma.com/@lilcoderman"
-      },
-      {
-        "title": "Instagram",
-        "url": "https://www.instagram.com/lilcoderman/"
-      },
-      {
-        "title": "Github",
-        "url": "https://github.com/abdulrauf11"
+        "title": "Youtube",
+        "url": "https://www.youtube.com/@SpillTheTeaProduction"
       }
     ]
   }

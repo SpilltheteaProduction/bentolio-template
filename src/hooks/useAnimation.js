@@ -1,22 +1,22 @@
-import gsap from 'gsap';
-import { useGSAP } from '@gsap/react';
-import { useRef, useState } from 'react';
-import { Flip } from 'gsap/Flip';
-import { DISABLE_LOADING_ANIMATION } from '@/config';
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { useRef, useState } from "react";
+import { Flip } from "gsap/Flip";
+import { DISABLE_LOADING_ANIMATION } from "@/config";
 
-export const useGlobalTimeline = loaded => {
+export const useGlobalTimeline = (loaded) => {
   const [tl, setTl] = useState();
   useGSAP(() => {
     if (DISABLE_LOADING_ANIMATION) return;
 
-    gsap.set(document.body, { overflow: 'hidden' });
+    gsap.set(document.body, { overflow: "hidden" });
     window.scrollTo({ top: 0 });
 
     if (!loaded) return;
 
     const tl = gsap.timeline({
-      defaults: { ease: 'power3.out' },
-      onComplete: () => gsap.set(document.body, { overflow: 'auto' }),
+      defaults: { ease: "power3.out" },
+      onComplete: () => gsap.set(document.body, { overflow: "auto" }),
     });
     setTl(tl);
   }, [loaded]);
@@ -33,7 +33,7 @@ export const useLoadingBarAnimation = (callback = () => {}) => {
       .timeline()
       .to(loadingBarRef.current, {
         scaleX: 1,
-        ease: 'slow.out',
+        ease: "slow.out",
         duration: 1,
         onComplete: () => callback(),
       })
@@ -45,8 +45,8 @@ export const useLoadingBarAnimation = (callback = () => {}) => {
 
 export const usePortraitAnimationShort = (
   timeline,
-  preLoaderSelector = '.preloader',
-  postLoaderSelector = '.postloader'
+  preLoaderSelector = ".preloader",
+  postLoaderSelector = ".postloader",
 ) => {
   const containerRef = useRef();
 
@@ -61,25 +61,25 @@ export const usePortraitAnimationShort = (
       timeline.add(
         Flip.from(state, {
           duration: 0.4,
-          ease: 'power2.out',
+          ease: "power2.out",
         })
           .set(postLoaderSelector, { opacity: 1 })
-          .set(preLoaderSelector, { visibility: 'hidden' }),
-        0
+          .set(preLoaderSelector, { visibility: "hidden" }),
+        0,
       );
     },
     {
       dependencies: [timeline],
       scope: containerRef,
-    }
+    },
   );
   return containerRef;
 };
 
 export const usePortraitAnimation = (
   timeline,
-  preLoaderSelector = '.preloader',
-  postLoaderSelector = '.postloader'
+  preLoaderSelector = ".preloader",
+  postLoaderSelector = ".postloader",
 ) => {
   const containerRef = useRef();
 
@@ -92,26 +92,26 @@ export const usePortraitAnimation = (
         {
           scale: 0.8,
           duration: 0.4,
-          ease: 'sine.out',
+          ease: "sine.out",
           onComplete: () => {
             const state = Flip.getState(preLoaderSelector);
             Flip.fit(preLoaderSelector, postLoaderSelector);
             Flip.from(state, {
               duration: 0.4,
-              ease: 'power2.out',
+              ease: "power2.out",
               delay: 0.2,
             })
-              .set(preLoaderSelector, { visibility: 'hidden' })
+              .set(preLoaderSelector, { visibility: "hidden" })
               .set(postLoaderSelector, { opacity: 1 });
           },
         },
-        0
+        0,
       );
     },
     {
       dependencies: [timeline],
       scope: containerRef,
-    }
+    },
   );
 
   return containerRef;
@@ -120,7 +120,7 @@ export const usePortraitAnimation = (
 export const useBoxAnimation = (
   timeline,
   callbackAnimation = () => {},
-  delay = 0.7
+  delay = 0.7,
 ) => {
   const boxRef = useRef();
 
@@ -134,88 +134,56 @@ export const useBoxAnimation = (
           y: 0,
           opacity: 1,
           scale: 1,
-          ease: 'power2.out',
+          ease: "power2.out",
           duration: 0.4,
         },
-        delay
+        delay,
       );
       callbackAnimation(delay);
     },
     {
       dependencies: [timeline],
       scope: boxRef,
-    }
+    },
   );
 
   return boxRef;
 };
 
 export const useDropdownAnimation = (
-  buttonSelector = '.button',
-  thumbnailSelector = '.thumbnail',
-  arrowSelector = '.arrow'
+  buttonSelector = ".button",
+  thumbnailSelector = ".description",
+  arrowSelector = ".arrow",
 ) => {
   const containerRef = useRef();
   const { contextSafe } = useGSAP({ scope: containerRef });
 
-  const handleClick = contextSafe(event => {
+  const handleClick = contextSafe((event) => {
     const currentButton = event.currentTarget;
     const currentThumbnail = currentButton.querySelector(thumbnailSelector);
     const currentArrow = currentButton.querySelector(arrowSelector);
 
     const timeline = gsap.timeline({
-      defaults: { ease: 'expo.out', duration: 0.8 },
+      defaults: { ease: "expo.out", duration: 0.8 },
     });
 
     timeline
-      .set(buttonSelector, { pointerEvents: 'auto' })
+      .set(buttonSelector, { pointerEvents: "auto" })
       .to(
         thumbnailSelector,
         {
           height: 0,
           marginTop: 0,
-          ease: 'sine.out',
+          ease: "sine.out",
           duration: 0.5,
         },
-        0
+        0,
       )
       .to(arrowSelector, { autoAlpha: 0, duration: 0.5 }, 0)
-      .set(currentButton, { pointerEvents: 'none' }, 0)
-      .to(currentThumbnail, { height: 'auto', marginTop: '1rem' }, 0)
+      .set(currentButton, { pointerEvents: "none" }, 0)
+      .to(currentThumbnail, { height: "auto", marginTop: "1rem" }, 0)
       .to(currentArrow, { autoAlpha: 1 }, 0);
   });
 
   return { containerRef, handleClick };
-};
-
-export const useArrowAnimation = (arrowSelector = '.arrow') => {
-  const containerRef = useRef();
-  const animation = useRef();
-
-  const { contextSafe } = useGSAP(
-    () => {
-      animation.current = gsap.timeline();
-    },
-    { scope: containerRef }
-  );
-
-  const handleMouseEnter = contextSafe(() => {
-    animation.current.kill();
-    animation.current = gsap.timeline().to(arrowSelector, {
-      xPercent: 50,
-      yPercent: -50,
-      repeat: -1,
-      yoyo: true,
-      duration: 0.7,
-      ease: 'sine.inOut',
-      yoyoEase: 'none',
-    });
-  });
-
-  const handleMouseLeave = contextSafe(() => {
-    animation.current.kill();
-    animation.current = gsap.to(arrowSelector, { xPercent: 0, yPercent: 0 });
-  });
-
-  return { containerRef, handleMouseEnter, handleMouseLeave };
 };

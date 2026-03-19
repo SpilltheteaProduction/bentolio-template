@@ -19,7 +19,7 @@ export default function Work({ data, timeline }) {
   return (
     <Box
       timeline={timeline}
-      className="-translate-x-full scale-0 py-0 opacity-0"
+      className="-translate-x-full scale-0 py-0 opacity-0 bg-primary"
       callbackAnimation={contentAnimation}
     >
       <div className="relative z-10 size-full overflow-hidden">
@@ -47,7 +47,7 @@ const ProjectItem = ({ project = {}, index, isLast, handleClick }) => {
   return (
     <button
       onClick={(event) => handleClick(event)}
-      className={`${index === 0 ? "pointer-events-none" : "pointer-events-auto"} button relative pb-[calc(1.8rem-2px)] pt-[1.8rem]`}
+      className={`${index === 0 ? "pointer-events-none" : "pointer-events-auto"} button relative pb-4 pt-4`}
     >
       <div className="flex w-full items-baseline justify-between flex-col overflow-hidden">
         {/* Title */}
@@ -56,7 +56,7 @@ const ProjectItem = ({ project = {}, index, isLast, handleClick }) => {
         </h3>
         {/* Description */}
         <p
-          className={`${index === 0 ? "mt-4" : "h-0"} font-normal description leading-[100%] text-start whitespace-pre-line`}
+          className={`${index === 0 ? "mt-4" : "h-0 opacity-0"} font-normal description leading-[100%] text-start whitespace-pre-line`}
         >
           {project?.description}
         </p>
@@ -64,7 +64,7 @@ const ProjectItem = ({ project = {}, index, isLast, handleClick }) => {
 
       {/* Border */}
       {!isLast && (
-        <div className="work-border absolute bottom-0 left-0 h-[1px] w-full origin-left bg-secondary" />
+        <div className="work-border absolute bottom-0 left-0 h-[1px] w-full origin-left bg-text" />
       )}
     </button>
   );

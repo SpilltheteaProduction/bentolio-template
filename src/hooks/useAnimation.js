@@ -24,7 +24,7 @@ export const useGlobalTimeline = (loaded) => {
   return tl;
 };
 
-export const useLoadingBarAnimation = (callback = () => {}) => {
+export const useLoadingBarAnimation = (callback = () => { }) => {
   const loadingBarRef = useRef();
   const timeline = useRef();
 
@@ -119,7 +119,7 @@ export const usePortraitAnimation = (
 
 export const useBoxAnimation = (
   timeline,
-  callbackAnimation = () => {},
+  callbackAnimation = () => { },
   delay = 0.7,
 ) => {
   const boxRef = useRef();
@@ -153,7 +153,6 @@ export const useBoxAnimation = (
 export const useDropdownAnimation = (
   buttonSelector = ".button",
   thumbnailSelector = ".description",
-  arrowSelector = ".arrow",
 ) => {
   const containerRef = useRef();
   const { contextSafe } = useGSAP({ scope: containerRef });
@@ -161,7 +160,6 @@ export const useDropdownAnimation = (
   const handleClick = contextSafe((event) => {
     const currentButton = event.currentTarget;
     const currentThumbnail = currentButton.querySelector(thumbnailSelector);
-    const currentArrow = currentButton.querySelector(arrowSelector);
 
     const timeline = gsap.timeline({
       defaults: { ease: "expo.out", duration: 0.8 },
@@ -173,16 +171,15 @@ export const useDropdownAnimation = (
         thumbnailSelector,
         {
           height: 0,
+          opacity: 0,
           marginTop: 0,
           ease: "sine.out",
           duration: 0.5,
         },
         0,
       )
-      .to(arrowSelector, { autoAlpha: 0, duration: 0.5 }, 0)
       .set(currentButton, { pointerEvents: "none" }, 0)
-      .to(currentThumbnail, { height: "auto", marginTop: "1rem" }, 0)
-      .to(currentArrow, { autoAlpha: 1 }, 0);
+      .to(currentThumbnail, { height: "auto", marginTop: "1rem", opacity: 1 }, 0)
   });
 
   return { containerRef, handleClick };

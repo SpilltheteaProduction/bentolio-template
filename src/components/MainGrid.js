@@ -27,9 +27,9 @@ export default function MainGrid({ data = {} }) {
           <Nav data={data?.nav} timeline={tl} />
         </div>
 
-        <div className="col-span-full relative rounded-2xl overflow-hidden row-span-3 flex justify-center items-center">
+        <div className="col-span-full relative rounded-2xl overflow-hidden row-span-4 flex justify-center items-center">
           <video
-            class="w-full absolute"
+            className="w-full absolute"
             autoplay=""
             muted
             loop
@@ -41,8 +41,8 @@ export default function MainGrid({ data = {} }) {
         </div>
 
         {/* Left column */}
-        <div className="col-span-8 row-span-6 grid grid-cols-subgrid grid-rows-subgrid max-lg:col-span-full max-lg:grid-rows-none max-lg:gap-4">
-          <div className="col-span-5 row-span-6 max-lg:col-span-8 max-md:col-span-full">
+        <div className="col-span-8 row-span-5 grid grid-cols-subgrid grid-rows-subgrid max-lg:col-span-full max-lg:grid-rows-none max-lg:gap-4">
+          <div className="col-span-5 row-span-5 max-lg:col-span-8 max-md:col-span-full">
             <Intro data={data?.intro} timeline={tl} />
           </div>
 
@@ -50,14 +50,14 @@ export default function MainGrid({ data = {} }) {
             <Portrait data={data?.portrait} timeline={tl} />
           </div>
 
-          <div className="col-span-3 row-span-4 max-lg:col-span-6 max-lg:min-h-[20rem] max-md:hidden">
+          <div className="col-span-3 row-span-3 max-lg:col-span-6 max-lg:min-h-[20rem] max-md:hidden">
             <Contact data={data?.contact} timeline={tl} />
           </div>
         </div>
 
         {/* Right column */}
-        <div className="col-span-4 row-span-6 grid grid-cols-subgrid grid-rows-subgrid max-lg:col-span-full max-lg:grid-rows-none max-lg:gap-4">
-          <div className="col-span-4 row-span-5 max-lg:col-span-full">
+        <div className="col-span-4 row-span-5 grid grid-cols-subgrid grid-rows-subgrid max-lg:col-span-full max-lg:grid-rows-none max-lg:gap-4">
+          <div className="col-span-4 row-span-4 max-lg:col-span-full">
             <Work data={data?.work} timeline={tl} />
           </div>
 

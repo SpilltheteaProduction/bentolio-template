@@ -1,9 +1,11 @@
 {
   "nav": {
-    "logo": "Spill the tea Production"
+    "logo": "/logo_blanc.png",
+    "name": "Spill the tea Production",
+    "slogan": "Tous les regards sont sur vous."
   },
   "video": {
-    "link": "https://spilltheteaproduction.github.io/bentolio-template/showreel.mp4"
+    "link": "/showreel.mp4"
   },
   "intro": {
     "heading": "Chaque histoire mérite d'être racontée avec soin.",
@@ -15,18 +17,15 @@
       "Captation de spectacles"
     ]
   },
-
   "portrait": {
-    "image": "https://spilltheteaproduction.github.io/bentolio-template/portrait.png"
+    "image": "/portrait.png"
   },
-
   "contact": {
     "label": "Des questions?",
     "heading": "Écrivons-nous !",
     "icon": "/icons/arrow-icon.svg",
     "email": "contact@spillthetea.fr"
   },
-
   "work": {
     "projects": [
       {
@@ -43,7 +42,6 @@
       }
     ]
   },
-
   "socials": {
     "links": [
       {

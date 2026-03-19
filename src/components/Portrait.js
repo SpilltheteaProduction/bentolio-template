@@ -10,7 +10,7 @@ export default function Portrait({ data, timeline }) {
   return (
     <div ref={containerRef} className='size-full'>
       <div
-        className={`${preAnimationClass} postloader box relative left-0 top-0 z-20 aspect-square h-full w-full translate-x-0 translate-y-0 transform bg-secondary`}
+        className={`${preAnimationClass} postloader box relative left-0 top-0 z-20 aspect-[455/211] h-full w-full translate-x-0 translate-y-0 transform bg-overlay`}
         data-flip-id='postloader'
       >
         {data?.image && (
@@ -28,7 +28,7 @@ export default function Portrait({ data, timeline }) {
 
       {!DISABLE_LOADING_ANIMATION && (
         <div
-          className='preloader box absolute-center z-30 aspect-[400/450] h-auto w-[30vw] bg-secondary max-md:w-[50vw]'
+          className='preloader box absolute-center z-30 aspect-[455/211] h-auto w-[60vw] bg-overlay max-md:w-[70vw]'
           data-flip-id='preloader'
         >
           {data?.image && (

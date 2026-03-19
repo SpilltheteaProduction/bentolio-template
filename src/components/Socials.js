@@ -12,7 +12,7 @@ export default function Socials({ data, timeline }) {
   return (
     <Box
       timeline={timeline}
-      className='-translate-y-full scale-0 opacity-0'
+      className='-translate-y-full scale-0 opacity-0 bg-secondary'
       callbackAnimation={contentAnimation}
     >
       <div className='flex size-full items-center justify-evenly gap-2'>

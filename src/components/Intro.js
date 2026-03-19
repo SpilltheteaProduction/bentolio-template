@@ -14,7 +14,7 @@ export default function Intro({ data, timeline }) {
   return (
     <Box
       timeline={timeline}
-      className={"translate-x-full scale-0 opacity-0"}
+      className={"translate-x-full scale-0 opacity-0 bg-primary"}
       callbackAnimation={contentAnimation}
     >
       <div className="z-10 flex size-full flex-col justify-between gap-4">

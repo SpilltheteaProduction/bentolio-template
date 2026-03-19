@@ -10,11 +10,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#D8CFBC',
-        secondary: '#565449',
+        primary: '#788176',
+        secondary: '#5E1803',
+        overlay: 'rgba(255, 255, 255, 0.35)',
 
-        text: '#11120D',
-        background: '#11120D',
+        text: '#F7F5F3',
+        background: '#DECFB6',
       },
 
       fontFamily: {

@@ -13,13 +13,12 @@ export default function Work({ data, timeline }) {
         { scaleX: 0, stagger: 0.18, ease: "slow.out" },
         delay + offset,
       )
-      .from(".thumbnail", { opacity: 0 }, delay + offset);
   };
 
   return (
     <Box
       timeline={timeline}
-      className="-translate-x-full scale-0 py-0 opacity-0 bg-primary"
+      className="-translate-x-full scale-0 opacity-0 bg-primary"
       callbackAnimation={contentAnimation}
     >
       <div className="relative z-10 size-full overflow-hidden">
@@ -37,7 +36,6 @@ export default function Work({ data, timeline }) {
             />
           ))}
         </div>
-        <div className="pointer-events-none absolute bottom-0 left-0 z-10 h-8 w-full bg-gradient-to-b from-primary/0 to-primary/50"></div>
       </div>
     </Box>
   );
@@ -47,9 +45,9 @@ const ProjectItem = ({ project = {}, index, isLast, handleClick }) => {
   return (
     <button
       onClick={(event) => handleClick(event)}
-      className={`${index === 0 ? "pointer-events-none" : "pointer-events-auto"} button relative pb-4 pt-4`}
+      className={`${index === 0 ? "pointer-events-none h-full" : "pointer-events-auto pt-4"} ${!isLast ? "pb-4" : ""} flex items-start button relative`}
     >
-      <div className="flex w-full items-baseline justify-between flex-col overflow-hidden">
+      <div className="flex w-full items-baseline justify-start flex-col overflow-hidden">
         {/* Title */}
         <h3 className="font-heading text-2xl font-normal leading-[100%]">
           <span className="work-heading block pb-[2px]">{project?.title}</span>

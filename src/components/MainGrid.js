@@ -10,6 +10,7 @@ import Work from "@/components/Work";
 import { useGlobalTimeline } from "@/hooks/useAnimation";
 import LoadingBar from "@/components/LoadingBar";
 import { DISABLE_LOADING_ANIMATION } from "@/config";
+import { VideoPlayer } from "./VideoPlayer";
 
 export default function MainGrid({ data = {} }) {
   const [loaded, setLoaded] = useState(DISABLE_LOADING_ANIMATION);
@@ -23,51 +24,30 @@ export default function MainGrid({ data = {} }) {
 
       {/* Bento Grid */}
       <div className="grid h-screen max-h-[75rem] min-h-[50rem] grid-cols-12 grid-rows-10 gap-4 p-4 max-lg:h-auto max-lg:max-h-none max-lg:grid-rows-none max-lg:py-6">
+        {/* Top half */}
         <div className="col-span-full row-span-1">
           <Nav data={data?.nav} timeline={tl} />
         </div>
 
-        <div className="col-span-full relative rounded-2xl overflow-hidden row-span-4 flex justify-center items-center">
-          <video
-            className="w-full absolute"
-            autoplay=""
-            muted
-            loop
-            playsinline
-            preload="auto"
-          >
-            <source src={data.video.link} />
-          </video>
+        <div className="col-span-full row-span-4">
+          <VideoPlayer data={data?.video} timeline={tl} />
         </div>
 
-        {/* Left column */}
-        <div className="col-span-8 row-span-5 grid grid-cols-subgrid grid-rows-subgrid max-lg:col-span-full max-lg:grid-rows-none max-lg:gap-4">
-          <div className="col-span-5 row-span-5 max-lg:col-span-8 max-md:col-span-full">
-            <Intro data={data?.intro} timeline={tl} />
-          </div>
-
-          <div className="col-span-3 row-span-2 max-lg:col-span-4 max-md:col-span-full">
-            <Portrait data={data?.portrait} timeline={tl} />
-          </div>
-
-          <div className="col-span-3 row-span-3 max-lg:col-span-6 max-lg:min-h-[20rem] max-md:hidden">
-            <Contact data={data?.contact} timeline={tl} />
-          </div>
+        {/* Bottom half */}
+        <div className="col-span-5 row-span-5 max-lg:col-span-6 max-md:col-span-full">
+          <Intro data={data?.intro} timeline={tl} />
         </div>
-
-        {/* Right column */}
-        <div className="col-span-4 row-span-5 grid grid-cols-subgrid grid-rows-subgrid max-lg:col-span-full max-lg:grid-rows-none max-lg:gap-4">
-          <div className="col-span-4 row-span-4 max-lg:col-span-full">
-            <Work data={data?.work} timeline={tl} />
-          </div>
-
-          <div className="col-span-full hidden max-lg:min-h-[20rem] max-md:block">
-            <Contact data={data?.contact} timeline={tl} />
-          </div>
-
-          <div className="col-span-4 row-span-1 max-lg:col-span-full max-lg:min-h-[5rem]">
-            <Socials data={data?.socials} timeline={tl} />
-          </div>
+        <div className="col-span-3 row-span-2 max-lg:col-span-6 max-md:col-span-full">
+          <Portrait data={data?.portrait} timeline={tl} />
+        </div>
+        <div className="col-span-4 row-span-4 max-lg:col-span-6 max-lg:row-span-5 max-md:col-span-full">
+          <Work data={data?.work} timeline={tl} />
+        </div>
+        <div className="col-span-3 row-span-3 max-lg:col-span-6 max-lg:min-h-[20rem] max-md:col-span-full">
+          <Contact data={data?.contact} timeline={tl} />
+        </div>
+        <div className="col-span-4 row-span-1 max-lg:col-span-6 max-lg:min-h-[5rem] max-md:col-span-full">
+          <Socials data={data?.socials} timeline={tl} />
         </div>
       </div>
     </>

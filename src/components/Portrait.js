@@ -1,6 +1,6 @@
 import { usePortraitAnimation } from '@/hooks/useAnimation';
 import Image from 'next/image';
-import { BLUR_DATA_URL, DISABLE_LOADING_ANIMATION } from '@/config';
+import { DISABLE_LOADING_ANIMATION } from '@/config';
 
 export default function Portrait({ data, timeline }) {
   const containerRef = usePortraitAnimation(timeline);
@@ -20,8 +20,6 @@ export default function Portrait({ data, timeline }) {
             alt='human'
             className='h-full w-full object-contain object-bottom'
             priority={true}
-            placeholder='blur'
-            blurDataURL={BLUR_DATA_URL}
           />
         )}
       </div>
@@ -38,8 +36,6 @@ export default function Portrait({ data, timeline }) {
               alt='human'
               className='h-full w-full object-contain object-bottom'
               priority={true}
-              placeholder='blur'
-              blurDataURL={BLUR_DATA_URL}
             />
           )}
         </div>

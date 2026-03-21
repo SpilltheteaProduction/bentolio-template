@@ -1,11 +1,11 @@
 {
   "nav": {
-    "logo": "/logo_blanc.png",
+    "logo": "https://spilltheteaproduction.github.io/bentolio-template/logo_blanc.png",
     "name": "Spill the tea Production",
     "slogan": "Tous les regards sont sur vous."
   },
   "video": {
-    "link": "/showreel.mp4"
+    "link": "https://spilltheteaproduction.github.io/bentolio-template/showreel.mp4"
   },
   "intro": {
     "heading": "Chaque histoire mérite d'être racontée avec soin.",
@@ -18,12 +18,12 @@
     ]
   },
   "portrait": {
-    "image": "/portrait.png"
+    "image": "https://spilltheteaproduction.github.io/bentolio-template/portrait.png"
   },
   "contact": {
     "label": "Des questions?",
     "heading": "Écrivons-nous !",
-    "icon": "/icons/arrow-icon.svg",
+    "icon": "https://spilltheteaproduction.github.io/bentolio-template/icons/arrow-icon.svg",
     "email": "contact@spillthetea.fr"
   },
   "work": {

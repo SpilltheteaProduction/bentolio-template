@@ -1,5 +1,5 @@
 import localFont from 'next/font/local';
-import { DM_Sans } from 'next/font/google';
+import { Inter } from 'next/font/google';
 import Global from '@/components/Global';
 import './globals.css';
 
@@ -15,7 +15,7 @@ const fontHeading = localFont({
   variable: '--font-heading',
 });
 
-const fontBody = DM_Sans({
+const fontBody = Inter({
   weight: ['300', '500'],
   style: 'normal',
   subsets: ['latin'],

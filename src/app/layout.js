@@ -1,4 +1,5 @@
-import { DM_Sans, DM_Serif_Display } from 'next/font/google';
+import localFont from 'next/font/local';
+import { DM_Sans } from 'next/font/google';
 import Global from '@/components/Global';
 import './globals.css';
 
@@ -8,10 +9,8 @@ export const metadata = {
     'Bentolio is a clean and customizable portfolio template built on Bento Grids, perfect for showcasing your work.',
 };
 
-const fontHeading = DM_Serif_Display({
-  weight: ['400'],
-  style: ['normal', 'italic'],
-  subsets: ['latin'],
+const fontHeading = localFont({
+  src: '../../public/fonts/Unblocker.ttf',
   display: 'swap',
   variable: '--font-heading',
 });

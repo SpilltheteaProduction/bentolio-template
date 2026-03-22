@@ -54,7 +54,7 @@ const ProjectItem = ({ project = {}, index, isLast, handleClick }) => {
         </h3>
         {/* Description */}
         <p
-          className={`${index === 0 ? "mt-4" : "h-0 opacity-0"} font-normal description leading-[100%] text-start whitespace-pre-line`}
+          className={`${index === 0 ? "mt-4" : "h-0 opacity-0"} description leading-[100%] text-start whitespace-pre-line`}
         >
           {project?.description}
         </p>

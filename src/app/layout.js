@@ -16,7 +16,7 @@ const fontHeading = localFont({
 });
 
 const fontBody = Inter({
-  weight: ['300', '500'],
+  weight: ['300', '400', '500'],
   style: 'normal',
   subsets: ['latin'],
   display: 'swap',
@@ -25,7 +25,7 @@ const fontBody = Inter({
 
 export default function RootLayout({ children }) {
   return (
-    <html lang='en' className='hide-scrollbar'>
+    <html lang='fr' className='hide-scrollbar'>
       <body
         className={`${fontHeading.variable} ${fontBody.variable} antialiased`}
       >

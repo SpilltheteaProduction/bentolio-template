@@ -21,10 +21,10 @@ export default function Intro({ data, timeline }) {
         <h1 className="intro-heading max-w-[32rem] font-heading text-5xl font-normal leading-[100%]">
           {data?.heading}
         </h1>
-        <p className="text-start whitespace-pre-line pr-12 text-xl xl:!text-normal">{data?.description}</p>
-        <p className="flex flex-row justify-start gap-2 flex-wrap max-h-full">
-          {data?.bullets.map((element) => (
-            <span className="whitespace-nowrap px-2 py-0.5 bg-white/20 rounded-full text-normal font-semibold xl:!text-sm">
+        <p className="text-start whitespace-pre-line pr-10 text-md">{data?.description}</p>
+        <p className="flex flex-row justify-start gap-2 xl:gap-1 flex-wrap max-h-full">
+          {data?.bullets.map((element, index) => (
+            <span key={`bullet-${index}`} className="whitespace-nowrap px-2 py-0.5 bg-white/20 rounded-full font-medium xl:text-sm">
               {element}
             </span>
           ))}

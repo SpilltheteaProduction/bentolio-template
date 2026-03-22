@@ -23,7 +23,7 @@ export default function MainGrid({ data = {} }) {
       )}
 
       {/* Bento Grid */}
-      <div className="grid h-screen max-h-[75rem] min-h-[50rem] grid-cols-12 grid-rows-10 gap-4 p-4 max-lg:h-auto max-lg:max-h-none max-lg:grid-rows-none max-lg:py-6">
+      <div className="grid h-screen min-h-[50rem] grid-cols-12 grid-rows-10 gap-4 p-4 max-lg:h-auto max-lg:max-h-none max-lg:grid-rows-none max-lg:py-6">
         {/* Top half */}
         <div className="col-span-full row-span-1">
           <Nav data={data?.nav} timeline={tl} />
@@ -46,7 +46,7 @@ export default function MainGrid({ data = {} }) {
         <div className="col-span-3 row-span-3 max-lg:col-span-6 max-lg:min-h-[20rem] max-md:col-span-full">
           <Contact data={data?.contact} timeline={tl} />
         </div>
-        <div className="col-span-4 row-span-1 max-lg:col-span-6 max-lg:min-h-[5rem] max-md:col-span-full">
+        <div className="col-span-4 row-span-1 max-lg:col-span-6 max-md:col-span-full">
           <Socials data={data?.socials} timeline={tl} />
         </div>
       </div>

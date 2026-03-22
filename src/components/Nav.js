@@ -14,7 +14,7 @@ export default function Nav({ data, timeline }) {
       className="translate-y-full scale-0 opacity-0 bg-secondary relative p-2"
       callbackAnimation={contentAnimation}
     >
-      <nav className="logo flex items-start flex-row gap-4 h-full">
+      <nav className="logo flex items-center justify-start flex-row gap-4 h-full">
         <div className="min-h-full aspect-square relative">
           {data?.logo &&
             <Image
@@ -28,8 +28,8 @@ export default function Nav({ data, timeline }) {
             />}
         </div>
         <div className="font-normal flex flex-col justify-center h-full">
-          <p className="text-2xl font-heading">{data?.name}</p>
-          <p className="text-sm -mt-1">{data?.slogan}</p>
+          <p className="max-sm:text-2xl text-[26px] font-heading">{data?.name}</p>
+          <p className="max-sm:text-[0.6rem] max-sm:-mt-1.5 text-[12px] -mt-2.5 font-light">{data?.slogan}</p>
         </div>
       </nav>
     </Box>

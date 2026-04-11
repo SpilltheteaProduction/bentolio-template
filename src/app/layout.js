@@ -4,9 +4,9 @@ import Global from '@/components/Global';
 import './globals.css';
 
 export const metadata = {
-  title: 'Bentolio',
+  title: 'Spill the tea Production',
   description:
-    'Bentolio is a clean and customizable portfolio template built on Bento Grids, perfect for showcasing your work.',
+    'Spill the tea Production is a creative film production company specializing in feel-good short-films.',
 };
 
 const fontHeading = localFont({

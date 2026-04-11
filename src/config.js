@@ -2,6 +2,7 @@
   disable loading animations to instantly load your website
   other animations will still work
 **/
+export const DISABLE_LOADING_PORTRAIT_ANIMATION = true;
 export const DISABLE_LOADING_ANIMATION = false;
 
 export const BLUR_DATA_URL =

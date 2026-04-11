@@ -76,7 +76,7 @@ export const usePortraitAnimationShort = (
   return containerRef;
 };
 
-export const usePortraitAnimation = (
+export const useVideoAnimation = (
   timeline,
   preLoaderSelector = ".preloader",
   postLoaderSelector = ".postloader",
@@ -116,6 +116,7 @@ export const usePortraitAnimation = (
 
   return containerRef;
 };
+
 
 export const useBoxAnimation = (
   timeline,

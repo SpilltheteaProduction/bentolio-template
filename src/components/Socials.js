@@ -12,9 +12,10 @@ export default function Socials({ data, timeline }) {
   return (
     <Box
       timeline={timeline}
-      className='-translate-y-full scale-0 opacity-0 bg-secondary'
+      className='-translate-y-full scale-0 opacity-0 bg-secondary p-0'
       callbackAnimation={contentAnimation}
     >
+
       <div className='flex size-full items-center justify-evenly gap-2'>
         {data?.links?.map(link => (
           <a
@@ -22,7 +23,7 @@ export default function Socials({ data, timeline }) {
             href={link.url}
             target='_blank'
             rel='noopener noreferrer'
-            className='flex overflow-hidden text-base font-medium uppercase leading-[100%]'
+            className='flex overflow-hidden text-base font-medium uppercase leading-[100%] size-full justify-center items-center'
           >
             <span className='social-link inline-block'>{link.title}</span>
           </a>

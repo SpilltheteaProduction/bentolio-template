@@ -10,7 +10,7 @@
   }
 
   html {
-    @apply text-[1vw] max-lg:text-[1.5vw] max-md:text-[2vw] max-sm:text-[clamp(12px,3.5vw,14px)];
+    @apply text-[clamp(12px,1vw,16px)] max-[1450px]:text-[clamp(13px,1.4vw,16px)] max-lg:text-[clamp(13px,1.5vw,16px)] max-md:text-[clamp(13px,2vw,16px)] max-sm:text-[clamp(12px,3.5vw,14px)];
   }
 
   body {

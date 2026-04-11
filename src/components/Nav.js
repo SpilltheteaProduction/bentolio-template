@@ -11,7 +11,7 @@ export default function Nav({ data, timeline }) {
   return (
     <Box
       timeline={timeline}
-      className="translate-y-full scale-0 opacity-0 bg-secondary relative p-2"
+      className="translate-y-full scale-0 opacity-0 bg-secondary relative max-sm:p-4 p-2"
       callbackAnimation={contentAnimation}
     >
       <nav className="logo flex items-center justify-start flex-row gap-4 h-full">
@@ -27,9 +27,9 @@ export default function Nav({ data, timeline }) {
               blurDataURL={BLUR_DATA_URL}
             />}
         </div>
-        <div className="font-normal flex flex-col justify-center h-full">
-          <p className="text-[1.3rem] min-[320px]:text-[1.8rem] font-heading">{data?.name}</p>
-          <p className="text-[0.85rem] -mt-2.5 font-light">{data?.slogan}</p>
+        <div className="font-normal flex flex-col justify-center h-full leading-none">
+          <p className="text-[1.3rem] min-[320px]:text-2xl font-heading">{data?.name}</p>
+          <p className="text-[0.75rem] font-light min-lg:-mt-1">{data?.slogan}</p>
         </div>
       </nav>
     </Box>

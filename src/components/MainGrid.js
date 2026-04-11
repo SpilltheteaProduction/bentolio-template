@@ -23,7 +23,7 @@ export default function MainGrid({ data = {} }) {
       )}
 
       {/* Bento Grid */}
-      <div className="grid h-screen min-h-[50rem] grid-cols-12 grid-rows-10 gap-4 p-4 max-lg:max-h-none max-lg:grid-rows-none max-lg:py-6">
+      <div className="grid h-screen min-h-[50rem] max-lg:h-auto grid-cols-12 grid-rows-10 gap-4 p-4 max-lg:max-h-none max-md:grid-rows-none max-lg:py-6">
         {/* Top half */}
         <div className="col-span-full row-span-1">
           <Nav data={data?.nav} timeline={tl} />

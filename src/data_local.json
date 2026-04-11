@@ -1,0 +1,54 @@
+{
+  "nav": {
+    "logo": "/logo_blanc.png",
+    "name": "Spill the tea Production",
+    "slogan": "Tous les regards sont sur vous."
+  },
+  "video": {
+    "link": "/showreel.webm",
+    "backup": "/showreel_opt.mp4"
+  },
+  "intro": {
+    "heading": "Chaque histoire mérite d'être racontée avec soin.",
+    "description": "Votre projet, c’est votre histoire. Elle a besoin d’être structurée, incarnée, réalisée avec exigence. Nous vous accompagnons pour trouver sa forme juste, à la hauteur de vos objectifs et de votre cible.\n\nNotre équipe est spécialisée en fiction : Quand vous nous confiez un projet, nous le pensons en termes d’intentions, de rythme, d’émotion. Et nous faisons toujours en sorte qu’il porte votre regard singulier.",
+    "bullets": [
+      "Création originale",
+      "Brand content",
+      "Films promotionnels",
+      "Captation de spectacles"
+    ]
+  },
+  "portrait": {
+    "image": "/portrait.png"
+  },
+  "contact": {
+    "label": "Des questions?",
+    "heading": "Écrivons-nous !",
+    "icon": "/icons/arrow-icon.svg",
+    "email": "contact@spillthetea.fr"
+  },
+  "work": {
+    "projects": [
+      {
+        "title": "Titouan Laporte 🎥",
+        "description": "Réalisateur depuis 10 ans, Titouan a développé une polyvalence qui se reflète dans la diversité de ses projets. Comédien depuis son plus jeune âge, il maîtrise la direction d’acteur et la justesse du jeu.\n\nSes films ont remporté des prix à l’international et son court métrage Le Magasin des Compliments est diffusé sur TF1/TF1 Séries Films."
+      },
+      {
+        "title": "Mathilde Guzzo ✒️",
+        "description": "Diplômée en Lettres Modernes, formée au Conservatoire Européen d’Ecriture Audiovisuelle et à la Cité des scénaristes, Mathilde vous accompagne dans vos projets en créant des récits structurés et adaptés à une audience.\n\nSes projets ont été lauréats des bourses d’écriture du Ministère de la Culture et Beaumarchais-SACD."
+      },
+      {
+        "title": "Elise Cunniet-Robert 💻​",
+        "description": "Développeuse informatique issue de l’École 42, Elise s’occupe des aspects technologiques de nos projets, en particulier pour les expériences immersives et interactives.\n\nLauréate du hackathon Google pour le Climat (2022), son expertise en programmation permet à Spill the tea de vous proposer les dernières innovations."
+      }
+    ]
+  },
+  "socials": {
+    "links": [
+      {
+        "title": "Youtube",
+        "url": "https://www.youtube.com/@SpillTheTeaProduction"
+      }
+    ]
+  }
+}

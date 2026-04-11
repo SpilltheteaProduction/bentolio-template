@@ -5,7 +5,8 @@
     "slogan": "Tous les regards sont sur vous."
   },
   "video": {
-    "link": "https://spilltheteaproduction.github.io/bentolio-template/showreel.mp4"
+    "link": "https://spilltheteaproduction.github.io/bentolio-template/showreel.webm",
+    "backup": "https://spilltheteaproduction.github.io/bentolio-template/showreel_opt.mp4"
   },
   "intro": {
     "heading": "Chaque histoire mérite d'être racontée avec soin.",

@@ -10,11 +10,11 @@
   }
 
   html {
-    @apply text-[1vw] max-lg:text-[1.5vw] max-md:text-[2vw] max-sm:text-[3.5vw];
+    @apply text-[1vw] max-lg:text-[1.5vw] max-md:text-[2vw] max-sm:text-[clamp(12px,3.5vw,14px)];
   }
 
   body {
-    @apply bg-background font-body font-light overscroll-y-none;
+    @apply bg-background font-body font-light overscroll-y-none min-w-[260px];
   }
 }
 
@@ -39,5 +39,8 @@
   }
   .hide-scrollbar::-webkit-scrollbar { 
       display: none;  /* Safari and Chrome */
+  }
+  .scrollbar-white {
+      @apply [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-track]:opacity-0 [&::-webkit-scrollbar-thumb]:bg-text/80 [&::-webkit-scrollbar-thumb]:rounded-full;
   }
 }

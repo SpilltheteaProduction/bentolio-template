@@ -28,8 +28,8 @@ export default function Nav({ data, timeline }) {
             />}
         </div>
         <div className="font-normal flex flex-col justify-center h-full">
-          <p className="max-sm:text-2xl text-[26px] font-heading">{data?.name}</p>
-          <p className="max-sm:text-[0.6rem] max-sm:-mt-1.5 text-[12px] -mt-2.5 font-light">{data?.slogan}</p>
+          <p className="text-[1.3rem] min-[320px]:text-[1.8rem] font-heading">{data?.name}</p>
+          <p className="text-[0.85rem] -mt-2.5 font-light">{data?.slogan}</p>
         </div>
       </nav>
     </Box>

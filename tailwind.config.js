@@ -6,6 +6,7 @@ module.exports = {
     './src/hooks/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
     './src/data.json',
+    "./src/data_local.json",
   ],
   theme: {
     extend: {

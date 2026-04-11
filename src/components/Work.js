@@ -18,12 +18,12 @@ export default function Work({ data, timeline }) {
   return (
     <Box
       timeline={timeline}
-      className="-translate-x-full scale-0 opacity-0 bg-primary"
+      className="-translate-x-full scale-0 opacity-0 bg-primary pr-3"
       callbackAnimation={contentAnimation}
     >
-      <div className="relative z-10 size-full overflow-hidden">
+      <div className="relative z-10 size-full overflow-hidden ">
         <div
-          className="hide-scrollbar flex h-full flex-col overflow-y-auto max-lg:overflow-y-visible"
+          className="flex h-full flex-col scrollbar-white overflow-y-auto pr-3"
           ref={containerRef}
         >
           {data?.projects?.map((project, index) => (

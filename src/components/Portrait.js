@@ -1,6 +1,6 @@
 import { usePortraitAnimation } from '@/hooks/useAnimation';
 import Image from 'next/image';
-import { DISABLE_LOADING_ANIMATION } from '@/config';
+import { BLUR_DATA_URL, DISABLE_LOADING_ANIMATION } from '@/config';
 
 export default function Portrait({ data, timeline }) {
   const containerRef = usePortraitAnimation(timeline);

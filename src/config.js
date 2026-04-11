@@ -4,9 +4,5 @@
 **/
 export const DISABLE_LOADING_ANIMATION = false;
 
-/** 
-  A data URL to be used as a placeholder image before the src image successfully loads
-  generate solid color blur data url (https://png-pixel.com/)
-**/
 export const BLUR_DATA_URL =
-  'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAA1JREFUGFdjCAvx/A8AA+oB81aCOA0AAAAASUVORK5CYII=';
+  'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA2ElEQVR4nAHNADL/AK2loBJ4aF9PbFtTenJeVqR4ZF5oj3Vre5N6bl+TeW1dno2FIG1tbQEAkoaBHHNhWGVvY2CcdGpsxX1/jZSVkJegnJqfjaKbnH2hpaw5ssraCACVem05a1VKimdiZsxocILqc4usyYqYr8+Tnq3GoKaxqZulsl2pusgYAItyZT5ZS0SOVmBv2k5skPdcibrwbY2x8HeKnvCFkZ7CgIqWcqWyvR8AiHJlPVFHRI5MXXPbQWmW+U+Du/Zafqb2XW6A9mhwesRmaW9ym6GnIJ8HZpSsqAUZAAAAAElFTkSuQmCC';

@@ -14,14 +14,14 @@ export default function Intro({ data, timeline }) {
   return (
     <Box
       timeline={timeline}
-      className="translate-x-full scale-0 opacity-0 bg-primary"
+      className="translate-x-full scale-0 opacity-0 bg-primary pr-3"
       callbackAnimation={contentAnimation}
     >
-      <div className="z-10 flex size-full flex-col justify-between gap-4 hide-scrollbar overflow-scroll">
+      <div className="z-10 flex size-full flex-col justify-between gap-4 overflow-y-auto pr-3 scrollbar-white">
         <h1 className="intro-heading max-w-[32rem] font-heading text-5xl font-normal leading-[100%]">
           {data?.heading}
         </h1>
-        <p className="text-start whitespace-pre-line pr-10 text-md">{data?.description}</p>
+        <p className="text-start whitespace-pre-line pr-10 text-base">{data?.description}</p>
         <p className="flex flex-row justify-start gap-2 xl:gap-1 flex-wrap max-h-full">
           {data?.bullets.map((element, index) => (
             <span key={`bullet-${index}`} className="whitespace-nowrap px-2 py-0.5 bg-white/20 rounded-full font-medium xl:text-sm">

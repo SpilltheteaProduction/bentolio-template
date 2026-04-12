@@ -180,7 +180,7 @@ export const useDropdownAnimation = (
         0,
       )
       .set(currentButton, { pointerEvents: "none", height: "100%" }, 0)
-      .to(currentThumbnail, { height: "auto", marginTop: "1rem", opacity: 1 }, 0)
+      .to(currentThumbnail, { height: "auto", marginTop: "0.25rem", opacity: 1 }, 0)
   });
 
   return { containerRef, handleClick };

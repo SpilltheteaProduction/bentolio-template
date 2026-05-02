@@ -1,31 +1,31 @@
 {
   "nav": {
-    "logo": "https://spilltheteaproduction.github.io/bentolio-template/logo_blanc.svg",
+    "logo": "https://spilltheteaprod.com/logo_blanc.svg",
     "name": "Spill the tea Production",
     "slogan": "Tous les regards sont sur vous."
   },
   "video": {
-    "link": "https://spilltheteaproduction.github.io/bentolio-template/video/webm/showreel_desktop.webm",
-    "backup": "https://spilltheteaproduction.github.io/bentolio-template/video/mp4/showreel_desktop.mp4",
+    "link": "https://spilltheteaprod.com/video/webm/showreel_desktop.webm",
+    "backup": "https://spilltheteaprod.com/video/mp4/showreel_desktop.mp4",
     "2xl": {
-      "link": "https://spilltheteaproduction.github.io/bentolio-template/video/webm/showreel_wide.webm",
-      "backup": "https://spilltheteaproduction.github.io/bentolio-template/video/mp4/showreel_wide.mp4"
+      "link": "https://spilltheteaprod.com/video/webm/showreel_wide.webm",
+      "backup": "https://spilltheteaprod.com/video/mp4/showreel_wide.mp4"
     },
     "xl": {
-      "link": "https://spilltheteaproduction.github.io/bentolio-template/video/webm/showreel_desktop.webm",
-      "backup": "https://spilltheteaproduction.github.io/bentolio-template/video/mp4/showreel_desktop.mp4"
+      "link": "https://spilltheteaprod.com/video/webm/showreel_desktop.webm",
+      "backup": "https://spilltheteaprod.com/video/mp4/showreel_desktop.mp4"
     },
     "lg": {
-      "link": "https://spilltheteaproduction.github.io/bentolio-template/video/webm/showreel_tablet.webm",
-      "backup": "https://spilltheteaproduction.github.io/bentolio-template/video/mp4/showreel_tablet.mp4"
+      "link": "https://spilltheteaprod.com/video/webm/showreel_tablet.webm",
+      "backup": "https://spilltheteaprod.com/video/mp4/showreel_tablet.mp4"
     },
     "md": {
-      "link": "https://spilltheteaproduction.github.io/bentolio-template/video/webm/showreel_mobile.webm",
-      "backup": "https://spilltheteaproduction.github.io/bentolio-template/video/mp4/showreel_mobile.mp4"
+      "link": "https://spilltheteaprod.com/video/webm/showreel_mobile.webm",
+      "backup": "https://spilltheteaprod.com/video/mp4/showreel_mobile.mp4"
     },
     "sm": {
-      "link": "https://spilltheteaproduction.github.io/bentolio-template/video/webm/showreel_mobile.webm",
-      "backup": "https://spilltheteaproduction.github.io/bentolio-template/video/mp4/showreel_mobile.mp4"
+      "link": "https://spilltheteaprod.com/video/webm/showreel_mobile.webm",
+      "backup": "https://spilltheteaprod.com/video/mp4/showreel_mobile.mp4"
     }
   },
   "intro": {
@@ -39,12 +39,12 @@
     ]
   },
   "portrait": {
-    "image": "https://spilltheteaproduction.github.io/bentolio-template/portrait.png"
+    "image": "https://spilltheteaprod.com/portrait.png"
   },
   "contact": {
     "label": "Des questions?",
     "heading": "Écrivons-nous !",
-    "icon": "https://spilltheteaproduction.github.io/bentolio-template/icons/arrow-icon.svg",
+    "icon": "https://spilltheteaprod.com/icons/arrow-icon.svg",
     "email": "contact@spillthetea.fr"
   },
   "work": {

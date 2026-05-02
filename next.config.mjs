@@ -2,12 +2,7 @@
 const nextConfig = {
     output: "export",
     images: {
-        remotePatterns: [
-            {
-                protocol: 'https',
-                hostname: 'spilltheteaprod.com',
-            },
-        ],
+        unoptimized: true,
     },
 };
 

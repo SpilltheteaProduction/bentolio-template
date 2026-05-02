@@ -1,12 +1,14 @@
 import { useVideoAnimation } from '@/hooks/useAnimation';
 import { DISABLE_LOADING_ANIMATION } from '@/config';
+import { useBreakpoint } from '@/hooks/useBreakpoint';
 
 export const VideoPlayer = ({ data, timeline }) => {
     const containerRef = useVideoAnimation(timeline);
     const preAnimationClass = DISABLE_LOADING_ANIMATION ? '' : 'opacity-0';
-
+    const breakpoint = useBreakpoint();
     const videoContent = (
         <video
+            key={breakpoint ? data[breakpoint].link : data.link}
             className="object-cover absolute min-h-full min-w-full"
             autoPlay
             muted
@@ -15,8 +17,8 @@ export const VideoPlayer = ({ data, timeline }) => {
             preload="auto"
             style={{ scale: 1.01 }}
         >
-            <source src={data?.link} type="video/webm" />
-            <source src={data?.backup} type="video/mp4" />
+            <source src={breakpoint ? data[breakpoint].link : data.link} type="video/webm" />
+            <source src={breakpoint ? data[breakpoint].backup : data.backup} type="video/mp4" />
         </video>
     );
 
@@ -34,7 +36,18 @@ export const VideoPlayer = ({ data, timeline }) => {
                     className='preloader absolute-center z-30 aspect-[2.4/1] w-[60vw] overflow-hidden rounded-[16px] bg-transparent p-2 flex justify-center items-center max-md:w-[70vw] max-md:aspect-[4/3]'
                     data-flip-id='preloader'
                 >
-                    {videoContent}
+                    <video
+                        className="object-cover absolute min-h-full min-w-full"
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        preload="auto"
+                        style={{ scale: 1.01 }}
+                    >
+                        <source src={data.link} type="video/webm" />
+                        <source src={data.backup} type="video/mp4" />
+                    </video>
                 </div>
             )}
         </div>

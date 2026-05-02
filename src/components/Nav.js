@@ -16,7 +16,7 @@ export default function Nav({ data, timeline }) {
           {data?.logo &&
             <img
               src={data.logo}
-              fill={true}
+              fill="true"
               className='h-full w-full object-contain object-center max-w-16'
               priority={true}
               alt="logo" />

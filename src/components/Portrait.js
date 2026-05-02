@@ -10,7 +10,7 @@ export default function Portrait({ data, timeline }) {
       {data?.image && (
         <Image
           src={data.image}
-          fill={true}
+          fill="true"
           alt='human'
           className='h-full w-full object-contain object-bottom'
           priority={true}

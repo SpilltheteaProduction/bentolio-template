@@ -5,8 +5,28 @@
     "slogan": "Tous les regards sont sur vous."
   },
   "video": {
-    "link": "https://spilltheteaproduction.github.io/bentolio-template/showreel.webm",
-    "backup": "https://spilltheteaproduction.github.io/bentolio-template/showreel_opt.mp4"
+    "link": "https://spilltheteaproduction.github.io/bentolio-template/video/webm/showreel_desktop.webm",
+    "backup": "https://spilltheteaproduction.github.io/bentolio-template/video/mp4/showreel_desktop.mp4",
+    "2xl": {
+      "link": "https://spilltheteaproduction.github.io/bentolio-template/video/webm/showreel_wide.webm",
+      "backup": "https://spilltheteaproduction.github.io/bentolio-template/video/mp4/showreel_wide.mp4"
+    },
+    "xl": {
+      "link": "https://spilltheteaproduction.github.io/bentolio-template/video/webm/showreel_desktop.webm",
+      "backup": "https://spilltheteaproduction.github.io/bentolio-template/video/mp4/showreel_desktop.mp4"
+    },
+    "lg": {
+      "link": "https://spilltheteaproduction.github.io/bentolio-template/video/webm/showreel_tablet.webm",
+      "backup": "https://spilltheteaproduction.github.io/bentolio-template/video/mp4/showreel_tablet.mp4"
+    },
+    "md": {
+      "link": "https://spilltheteaproduction.github.io/bentolio-template/video/webm/showreel_mobile.webm",
+      "backup": "https://spilltheteaproduction.github.io/bentolio-template/video/mp4/showreel_mobile.mp4"
+    },
+    "sm": {
+      "link": "https://spilltheteaproduction.github.io/bentolio-template/video/webm/showreel_mobile.webm",
+      "backup": "https://spilltheteaproduction.github.io/bentolio-template/video/mp4/showreel_mobile.mp4"
+    }
   },
   "intro": {
     "heading": "Chaque histoire mérite d'être racontée avec soin.",

@@ -1,31 +1,31 @@
 {
   "nav": {
-    "logo": "https://spilltheteaprod.com/logo_blanc.svg",
+    "logo": "https://spillthetea.fr/logo_blanc.svg",
     "name": "Spill the tea Production",
     "slogan": "Tous les regards sont sur vous."
   },
   "video": {
-    "link": "https://spilltheteaprod.com/video/webm/showreel_desktop.webm",
-    "backup": "https://spilltheteaprod.com/video/mp4/showreel_desktop.mp4",
+    "link": "https://spillthetea.fr/video/webm/showreel_desktop.webm",
+    "backup": "https://spillthetea.fr/video/mp4/showreel_desktop.mp4",
     "2xl": {
-      "link": "https://spilltheteaprod.com/video/webm/showreel_wide.webm",
-      "backup": "https://spilltheteaprod.com/video/mp4/showreel_wide.mp4"
+      "link": "https://spillthetea.fr/video/webm/showreel_wide.webm",
+      "backup": "https://spillthetea.fr/video/mp4/showreel_wide.mp4"
     },
     "xl": {
-      "link": "https://spilltheteaprod.com/video/webm/showreel_desktop.webm",
-      "backup": "https://spilltheteaprod.com/video/mp4/showreel_desktop.mp4"
+      "link": "https://spillthetea.fr/video/webm/showreel_desktop.webm",
+      "backup": "https://spillthetea.fr/video/mp4/showreel_desktop.mp4"
     },
     "lg": {
-      "link": "https://spilltheteaprod.com/video/webm/showreel_tablet.webm",
-      "backup": "https://spilltheteaprod.com/video/mp4/showreel_tablet.mp4"
+      "link": "https://spillthetea.fr/video/webm/showreel_tablet.webm",
+      "backup": "https://spillthetea.fr/video/mp4/showreel_tablet.mp4"
     },
     "md": {
-      "link": "https://spilltheteaprod.com/video/webm/showreel_mobile.webm",
-      "backup": "https://spilltheteaprod.com/video/mp4/showreel_mobile.mp4"
+      "link": "https://spillthetea.fr/video/webm/showreel_mobile.webm",
+      "backup": "https://spillthetea.fr/video/mp4/showreel_mobile.mp4"
     },
     "sm": {
-      "link": "https://spilltheteaprod.com/video/webm/showreel_mobile.webm",
-      "backup": "https://spilltheteaprod.com/video/mp4/showreel_mobile.mp4"
+      "link": "https://spillthetea.fr/video/webm/showreel_mobile.webm",
+      "backup": "https://spillthetea.fr/video/mp4/showreel_mobile.mp4"
     }
   },
   "intro": {
@@ -39,13 +39,13 @@
     ]
   },
   "portrait": {
-    "image": "https://spilltheteaprod.com/portrait.png",
+    "image": "https://spillthetea.fr/portrait.png",
     "alt": "Portrait de l'équipe de Spill the tea Production"
   },
   "contact": {
     "label": "Des questions ?",
     "heading": "Écrivons-nous !",
-    "icon": "https://spilltheteaprod.com/icons/arrow-icon.svg",
+    "icon": "https://spillthetea.fr/icons/arrow-icon.svg",
     "email": "contact@spillthetea.fr"
   },
   "work": {

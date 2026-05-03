@@ -2,7 +2,7 @@
   "name": "bentolio-template",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://spilltheteaprod.com",
+  "homepage": "https://spillthetea.fr",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

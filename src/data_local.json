@@ -30,19 +30,20 @@
   },
   "intro": {
     "heading": "Chaque histoire mérite d'être racontée avec soin.",
-    "description": "Votre projet, c’est votre histoire. Elle a besoin d’être structurée, incarnée, réalisée avec exigence. Nous vous accompagnons pour trouver sa forme juste, à la hauteur de vos objectifs et de votre cible.\n\nNotre équipe est spécialisée en fiction : Quand vous nous confiez un projet, nous le pensons en termes d’intentions, de rythme, d’émotion. Et nous faisons toujours en sorte qu’il porte votre regard singulier.",
+    "description": "Votre projet, c’est votre histoire. Elle a besoin d’être structurée, incarnée, réalisée avec exigence. Nous vous accompagnons pour trouver sa forme juste, à la hauteur de vos objectifs et de votre cible.\n\nNotre équipe est spécialisée en fiction : Quand vous nous confiez un projet, nous le pensons en termes d’intentions, de rythme, d’émotions. Et nous faisons toujours en sorte qu’il porte votre regard singulier.",
     "bullets": [
-      "Création originale",
+      "Créations originales",
       "Brand content",
       "Films promotionnels",
-      "Captation de spectacles"
+      "Captations de spectacles"
     ]
   },
   "portrait": {
-    "image": "/portrait.png"
+    "image": "/portrait.png",
+    "alt": "Portrait de l'équipe de Spill the tea Production"
   },
   "contact": {
-    "label": "Des questions?",
+    "label": "Des questions ?",
     "heading": "Écrivons-nous !",
     "icon": "/icons/arrow-icon.svg",
     "email": "contact@spillthetea.fr"
@@ -55,7 +56,7 @@
       },
       {
         "title": "Mathilde Guzzo ✒️",
-        "description": "Diplômée en Lettres Modernes, formée au Conservatoire Européen d’Ecriture Audiovisuelle et à la Cité des scénaristes, Mathilde vous accompagne dans vos projets en créant des récits structurés et adaptés à une audience.\n\nSes projets ont été lauréats des bourses d’écriture du Ministère de la Culture et Beaumarchais-SACD."
+        "description": "Diplômée en Lettres Modernes, formée au Conservatoire Européen d’Ecriture Audiovisuelle et à la Cité des scénaristes, Mathilde vous accompagne dans vos projets en créant des récits structurés et adaptés à votre audience.\n\nSes projets ont été lauréats des bourses d’écriture du Ministère de la Culture et Beaumarchais-SACD."
       },
       {
         "title": "Elise Cunniet-Robert 💻​",

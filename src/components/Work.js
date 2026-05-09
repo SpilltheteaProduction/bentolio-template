@@ -45,7 +45,7 @@ const ProjectItem = ({ project = {}, index, isLast, handleClick }) => {
   return (
     <button
       onClick={(event) => handleClick(event)}
-      className={`${index === 0 ? "pointer-events-none h-full" : "pointer-events-auto pt-4"} ${!isLast ? "pb-4" : ""} flex items-start button relative`}
+      className={`${index === 0 ? "pointer-events-none h-full" : "pointer-events-auto pt-4"} ${!isLast ? "pb-4" : ""} min-h-fit flex items-start button relative`}
     >
       <div className="flex w-full items-baseline justify-start flex-col overflow-hidden">
         {/* Title */}
